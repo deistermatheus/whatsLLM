@@ -58,6 +58,9 @@ For local development, ngrok is recommended:
 ### Expected outcome
 
 * Chat with the bot over Whatsapp, the following capture is using the Twilio Sandbox Number:
+![sample-capture](https://github.com/deistermatheus/whatsLLM/assets/24402584/d2caa266-9888-41d9-831f-6939b245edd5)
+
+  
 
 ## License
 
