@@ -101,6 +101,15 @@ The app should now be available in a public url such as:
     https://<your-chosen-app-name>.fly.dev/docs
 ```
 
+### Deploying Automatically
+
+Create a new secret in the repository with:
+
+```sh
+    fly tokens create deploy -x 99999h
+```
+
+Setup the [GitHub Action by defining a new repository secret](https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/) with the token
 
 ### Expected outcome
 
