@@ -82,10 +82,16 @@ To start the deployment process, a Fly.io account is required:
     fly launch
 ```
 
-Set required environment variables:
+The app requires a database connection and API keys for integrations, to set required environment variables:
 
 ```sh
     fly secrets import < .env
+```
+
+After making changes:
+
+```sh
+    fly deploy
 ```
 
 The app should now be available in a public url such as:
