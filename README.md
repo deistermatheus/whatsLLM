@@ -71,6 +71,9 @@ For local development, ngrok is recommended to get a public url for Twilio:
     ngrok http 8000
 ```
 
+After obtaining a public URL, set up the Whatsapp Webhook in the Twilio Console, the 
+docs for Twilio Webhooks can be found [here](https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks).
+
 ### Deploying
 
 To start the deployment process, a Fly.io account is required:
@@ -92,7 +95,7 @@ The app should now be available in a public url such as:
     https://<your-chosen-app-name>.fly.dev/docs
 ```
 
-Check out the docs for Twilio Webhooks [here](https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks).
+
 ### Expected outcome
 
 * Chat with the bot over Whatsapp, the following capture is using the Twilio Sandbox Number:
