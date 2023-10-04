@@ -137,9 +137,6 @@ Setup the [GitHub Action by defining a new repository secret](https://fly.io/doc
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-## Acknowledgments
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-
 ## Explore Libraries and Frameworks
 
 * [FastAPI](https://fastapi.tiangolo.com/)
@@ -147,3 +144,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 * [OpenAI SDK](https://github.com/openai/openai-python)
 * [Twilio REST Client](https://www.twilio.com/docs/libraries/python)
 
+## Acknowledgments
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
