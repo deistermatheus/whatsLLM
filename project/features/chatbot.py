@@ -24,8 +24,9 @@ class ChatbotService:
     
     def build_conversation_context(self, last_messages: Conversation, user_prompt: str, base_prompt: str):
         prompt_context = []
+        messages = reversed([message for message in last_messages])
 
-        for message in reversed(last_messages): # messages are queried with most recent on top
+        for message in messages): # messages are queried with most recent on top
             prompt_context.append({"role": "user", "content":  message.message})
             prompt_context.append({"role": "assistant", "content":  message.response})
         
