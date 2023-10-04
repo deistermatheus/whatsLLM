@@ -56,7 +56,7 @@ or integrating with other OpenAI features such as speech to text and image gener
 * Check the OpenAPI docs page or make a direct request to see the project is up and running:
 
 ```sh
-    curl -X 'GET' \
+   curl -X 'GET' \
   'http://localhost:8000/health' \
   -H 'accept: application/json'
 ```
@@ -69,7 +69,7 @@ For local development, ngrok is recommended to get a public url for Twilio:
     ngrok http 8000
 ```
 
-After obtaining a public URL, set up the Whatsapp Webhook in the Twilio Console, the 
+After obtaining a public URL, set up the Whatsapp Webhook in the Twilio Console. The 
 docs for Twilio Webhooks can be found [here](https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks).
 
 ## Deploying
