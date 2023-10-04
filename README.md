@@ -14,14 +14,14 @@ or integrating with other OpenAI features such as speech to text and image gener
 ### Dependencies
 
 #### Required
-* UNIX system
-* Python 3.10
-* SQL Database
-* Twilio Account 
-* OpenAI API Key
+* [Python 3.10](https://www.python.org/)
+* [SQL Database](https://neon.tech/) - Linked offering has a generous free tier
+* [Twilio Account](https://www.twilio.com/docs) - First users get free credits
+* [OpenAI API Key](https://openai.com/blog/openai-api) - First users get free credits
+* [Ngrok](https://ngrok.com/) (or other network tunneling tool) for local development
 
 #### Optional
-* Docker and Docker Compose
+* Docker and Docker Compose - Helps with deployment and running the project using a local SQL database
 
 ### Installing
 
@@ -55,16 +55,29 @@ For local development, ngrok is recommended:
     ngrok http 8000
 ```
 
+* Check the OpenAPI docs page to see the project is up and running:
+
+```
+    http://localhost:8000/docs 
+``
+
 ### Expected outcome
 
 * Chat with the bot over Whatsapp, the following capture is using the Twilio Sandbox Number:
 ![sample-capture](https://github.com/deistermatheus/whatsLLM/assets/24402584/d2caa266-9888-41d9-831f-6939b245edd5)
 
   
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
+
+## Explore Libraries and Frameworks
+
+* [FastAPI](https://fastapi.tiangolo.com/)
+* [SQLAlchemy](https://www.sqlalchemy.org/)
+* [OpenAI SDK](https://github.com/openai/openai-python)
+* [Twilio REST Client](https://www.twilio.com/docs/libraries/python)
+
