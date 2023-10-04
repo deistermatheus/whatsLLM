@@ -123,6 +123,7 @@ Setup the [GitHub Action by defining a new repository secret](https://fly.io/doc
 - [x] Add SQL Database for short term context
 - [x] Save customizable prompt in chatbot configs
 - [x] Deploy to the cloud
+- [ ] Add Telegram as alternative channel
 - [ ] Allow more customization choices over GPT (model, temperature...)
 - [ ] Voice support
 - [ ] Image generation
