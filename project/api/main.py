@@ -44,12 +44,3 @@ async def reply(id_bot: int, request: Request, db = Depends(get_db)):
     twilio.send_wpp_message(whatsapp_number, chatbot_response)
 
     return # webhook only expects a success response
-
-
-
-
-    
-
-    
-    
-

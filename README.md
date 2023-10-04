@@ -127,7 +127,11 @@ Setup the [GitHub Action by defining a new repository secret](https://fly.io/doc
 - [ ] Image generation
 - [ ] Embeddings for larger context
 
+### Code Quality
 
+- [ ] Add Automated Testing with CI Check
+- [ ] Improve OpenAPI documentation
+- [ ] Improve Type Hinting
   
 ## License
 
