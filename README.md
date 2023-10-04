@@ -47,14 +47,6 @@ or integrating with other OpenAI features such as speech to text and image gener
    uvicorn project.api.main:app --host 0.0.0.0 --reload
 ```
 
-* Setup your Twilio Webhook Endpoint
-
-For local development, ngrok is recommended:
-
-```sh
-    ngrok http 8000
-```
-
 * Check the OpenAPI docs page or make a direct request to see the project is up and running:
 
 ```sh
@@ -63,6 +55,13 @@ For local development, ngrok is recommended:
   -H 'accept: application/json'
 ```
 
+* Setup your Twilio Webhook Endpoint
+
+For local development, ngrok is recommended to get a public url for Twilio:
+
+```sh
+    ngrok http 8000
+```
 ### Expected outcome
 
 * Chat with the bot over Whatsapp, the following capture is using the Twilio Sandbox Number:
