@@ -51,15 +51,17 @@ or integrating with other OpenAI features such as speech to text and image gener
 
 For local development, ngrok is recommended:
 
-```
+```sh
     ngrok http 8000
 ```
 
-* Check the OpenAPI docs page to see the project is up and running:
+* Check the OpenAPI docs page or make a direct request to see the project is up and running:
 
+```sh
+    curl -X 'GET' \
+  'http://localhost:8000/health' \
+  -H 'accept: application/json'
 ```
-    http://localhost:8000/docs 
-``
 
 ### Expected outcome
 
