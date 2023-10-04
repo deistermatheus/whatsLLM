@@ -68,6 +68,19 @@ For local development, ngrok is recommended:
 * Chat with the bot over Whatsapp, the following capture is using the Twilio Sandbox Number:
 ![sample-capture](https://github.com/deistermatheus/whatsLLM/assets/24402584/d2caa266-9888-41d9-831f-6939b245edd5)
 
+### Mini Roadmap
+
+#### Features
+- [x] Get the integration working
+- [x] Add SQL Database for short term context
+- [x] Save customizable prompt in chatbot configs
+- [ ] Deploy to the cloud
+- [ ] Allow more customization choices over GPT (model, temperature...)
+- [ ] Voice support
+- [ ] Image generation
+- [ ] Embeddings for larger context
+
+
   
 ## License
 
