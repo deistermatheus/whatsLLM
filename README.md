@@ -46,9 +46,10 @@ or integrating with other OpenAI features such as speech to text and image gener
    uvicorn project.api.main:app --host 0.0.0.0 --reload
 ```
 
-* Alternatively
+* Alternatively, to run a local docker image of the project:
 
 ```sh
+    docker build -t whatsllm .
     docker run -it -p 8000:8000 --env-file=./.env whatsllm  bash server.sh
 ```
 
