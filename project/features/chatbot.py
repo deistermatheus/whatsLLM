@@ -14,7 +14,7 @@ class ChatbotService:
                 .filter(ChatBotConfig.id == id_bot) \
                 .first()
 
-        prompt = chatbot_config.prompt if chatbot_config else "Just be friendly and use the persona of a demo NLP chatbot in the context of a Whatsapp Conversation"
+        prompt = chatbot_config.prompt if chatbot_config else "You're an AI assistant, keep answers short and to the point, no need to apologize if the user asks follow-up questions"
         context_length = chatbot_config.context_length if chatbot_config else 3
         
         return {
