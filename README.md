@@ -19,6 +19,7 @@ or integrating with other OpenAI features such as speech to text and image gener
 * [Twilio Account](https://www.twilio.com/docs) - First users get free credits
 * [OpenAI API Key](https://openai.com/blog/openai-api) - First users get free credits
 * [Ngrok](https://ngrok.com/) (or other network tunneling tool) for local development
+* [Fly.io CLI](https://fly.io/docs/) - Free tier up to 3 apps, easily package and run Docker based applications
 
 #### Optional
 * Docker and Docker Compose - Helps with deployment and running the project using a local SQL database
@@ -30,7 +31,8 @@ or integrating with other OpenAI features such as speech to text and image gener
     git clone https://github.com/deistermatheus/whatsLLM.git
 ```
 
-* Setup the environment variables
+* Create an environment file, setting appropriate variables for Database, Twilio and OpenAI:
+
 ```sh
     cp .env.example .env
 ```
@@ -45,6 +47,12 @@ or integrating with other OpenAI features such as speech to text and image gener
 
 ```sh
    uvicorn project.api.main:app --host 0.0.0.0 --reload
+```
+
+* Alternatively
+
+```sh
+    docker run -it -p 8000:8000 --env-file=./.env whatsllm  bash server.sh
 ```
 
 * Check the OpenAPI docs page or make a direct request to see the project is up and running:
@@ -63,6 +71,27 @@ For local development, ngrok is recommended to get a public url for Twilio:
     ngrok http 8000
 ```
 
+### Deploying
+
+To start the deployment process, a Fly.io account is required:
+
+```sh
+    fly launch
+```
+
+Set required environment variables:
+
+```sh
+    fly secrets import < .env
+```
+
+The app should now be available in a public url such as:
+
+```sh
+    https://<your-chosen-app-name>.fly.dev/health
+    https://<your-chosen-app-name>.fly.dev/docs
+```
+
 Check out the docs for Twilio Webhooks [here](https://www.twilio.com/docs/usage/webhooks/getting-started-twilio-webhooks).
 ### Expected outcome
 
@@ -75,7 +104,7 @@ Check out the docs for Twilio Webhooks [here](https://www.twilio.com/docs/usage/
 - [x] Get the integration working
 - [x] Add SQL Database for short term context
 - [x] Save customizable prompt in chatbot configs
-- [ ] Deploy to the cloud
+- [x] Deploy to the cloud
 - [ ] Allow more customization choices over GPT (model, temperature...)
 - [ ] Voice support
 - [ ] Image generation
