@@ -14,15 +14,13 @@ or integrating with other OpenAI features such as speech to text and image gener
 ### Dependencies
 
 #### Required
-* [Python 3.10](https://www.python.org/)
+* [Python 3.10](https://www.python.org/) - Check out [Libraries And Frameworks](#explore-libraries-and-frameworks)
+* [Docker](https://www.docker.com/) - Package the app for deployment
 * [SQL Database](https://neon.tech/) - Linked offering has a generous free tier
 * [Twilio Account](https://www.twilio.com/docs) - First users get free credits
 * [OpenAI API Key](https://openai.com/blog/openai-api) - First users get free credits
 * [Ngrok](https://ngrok.com/) (or other network tunneling tool) for local development
 * [Fly.io CLI](https://fly.io/docs/) - Free tier up to 3 apps, easily package and run Docker based applications
-
-#### Optional
-* Docker and Docker Compose - Helps with deployment and running the project using a local SQL database
 
 ### Installing
 
