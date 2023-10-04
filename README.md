@@ -11,9 +11,8 @@ or integrating with other OpenAI features such as speech to text and image gener
 
 ## Getting Started
 
-### Dependencies
+### Prerequisites
 
-#### Required
 * [Python 3.10](https://www.python.org/) - Check out [Libraries And Frameworks](#explore-libraries-and-frameworks)
 * [Docker](https://www.docker.com/) - Package the app for deployment
 * [SQL Database](https://neon.tech/) - Linked offering has a generous free tier
